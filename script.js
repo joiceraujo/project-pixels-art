@@ -28,16 +28,16 @@ function addClassSelected(event) {
 function changeColor(event) {
   const eventTarget = event.target;
   const colorSelected = document.querySelector('.selected');
-  const bgColor = window.getComputedStyle(colorSelected, null).getPropertyValue('background-color'); /* * */
+  const bgColor = window.getComputedStyle(colorSelected).getPropertyValue('background-color');
   eventTarget.style.backgroundColor = bgColor;
 }
 
 function clearBoard() {
   const pixels = document.getElementsByClassName('pixel');
-  const pixelBoard = document.getElementById('pixel-board');
-  pixelBoard.style.backgroundColor = 'rgb(255, 255, 255)';
+  const pixelBoard = document.getElementById('clear-board');
+  pixelBoard.style.backgroundColor = 'white';
   for (let i = 0; i < pixels.length; i += 1) {
-    pixels[i].style.backgroundColor = 'rgb(255, 255, 255)';
+    pixels[i].style.backgroundColor = 'white';
   }
 }
 

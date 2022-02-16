@@ -10,18 +10,13 @@ body {
 .color {
     border: 1px solid black;
     display: inline-block;
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
 }
 
 .color:hover {
     cursor: pointer;
   }
-
-#container{
-    text-align: center;
-}
-
 
 button {
     margin-left: 5px;
@@ -37,17 +32,17 @@ button {
 }
 
 #brown {
-    background-color: rgb(128,0,0);
+    background-color: brown;
     border: 1px solid black;
 }
 
 #red {
-    background-color: rgb(178,34,34);
+    background-color: red;
     border: 1px solid black;
 }
 
 #salmon {
-    background-color: rgb(255,99,71);
+    background-color: salmon;
     border: 1px solid black;
 }
 
@@ -108,7 +103,7 @@ button {
     font-size: 20px;
   }
   
-  /* Rodapé */
+
 #footer {
     background-color: rgb(250, 128, 114);
     padding: 1px;
